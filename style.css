@@ -1,0 +1,16 @@
+*{box-sizing:border-box}body{margin:0;background:#0e1420;color:#dfe6f5;font:14px system-ui,sans-serif;height:100vh;display:flex;flex-direction:column}
+header{display:flex;gap:10px;align-items:center;padding:8px 14px;background:#141c2b;border-bottom:1px solid #1f2a40}header b span{color:#4a6cf7}.sp{flex:1}
+select,input,button{background:#1b2538;color:#dfe6f5;border:1px solid #2a3753;border-radius:8px;padding:8px}button{cursor:pointer}
+.bal{background:#1b2538;padding:6px 12px;border-radius:8px}.bal b{color:#26c281}#st{color:#e5a93c;font-size:12px}
+main{flex:1;display:flex;min-height:0}#chart{flex:1;position:relative;min-width:0}canvas{position:absolute;inset:0;width:100%;height:100%}
+aside{width:260px;padding:12px;background:#141c2b;border-left:1px solid #1f2a40;overflow:auto;display:flex;flex-direction:column;gap:6px}
+label{color:#7d8aa5;font-size:12px;margin-top:6px}.row{display:flex;gap:6px}.row button{flex:1}.row .on{background:#4a6cf7;border-color:#4a6cf7}
+#sig{border-radius:12px;padding:12px;text-align:center;background:#1b2538;border:2px solid #2a3753}#sg{font-size:24px;font-weight:700;margin:4px 0}
+#sig.up{border-color:#26c281;animation:p 1s infinite}#sig.down{border-color:#ef4b5b;animation:p 1s infinite}#sig.up #sg{color:#26c281}#sig.down #sg{color:#ef4b5b}
+@keyframes p{50%{box-shadow:0 0 18px #4a6cf766}}#cd{font-size:30px;font-weight:800}#rsn,#stat,.pay,.warn{font-size:11px;color:#7d8aa5}
+.go{font-size:18px;font-weight:700;padding:14px;border:0;color:#fff}.g{background:#26c281}.r{background:#ef4b5b}
+#log{flex:1;font-size:12px;display:flex;flex-direction:column;gap:3px}#log .w{color:#26c281}#log .l{color:#ef4b5b}
+#md{position:fixed;inset:0;background:#000a;display:flex;align-items:center;justify-content:center}#md[hidden]{display:none}#md div{background:#141c2b;padding:20px;border-radius:12px;display:flex;flex-direction:column;gap:10px;width:300px}
+@media(max-width:700px){main{flex-direction:column}aside{width:100%;max-height:48vh;border:0}#chart{min-height:300px}}
+#tb{position:absolute;top:8px;left:8px;display:flex;gap:4px;align-items:center;flex-wrap:wrap;z-index:2}#tb button{padding:5px 9px;font-size:12px;background:#141c2bcc}#tb .on{background:#4a6cf7;border-color:#4a6cf7}#tb i{width:6px}#nc{font-size:12px;color:#7d8aa5;margin-left:6px}
+#ot{font-size:12px;display:flex;flex-direction:column;gap:3px}#ot .w{color:#26c281}#ot .l{color:#ef4b5b}#msg{font-size:12px;min-height:16px}#amt{flex:1;min-width:0;text-align:center}

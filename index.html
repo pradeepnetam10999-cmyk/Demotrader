@@ -1,0 +1,14 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BinaryDemo Pro</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b>Binary<span>Demo</span></b><select id="as"></select><span id="st"></span><span class="sp"></span><span id="clk"></span><div class="bal">DEMO <b id="bal"></b></div><button id="rs" title="Balance reset">↺</button><button id="cfg">⚙ API</button></header>
+<main><section id="chart"><canvas id="cv"></canvas>
+<div id="tb"><button data-tf="60" class="on">1m</button><button data-tf="300">5m</button><button data-tf="900">15m</button><i></i><button id="ty">Line</button><button id="ie">EMA</button><button id="ib">BB</button><i></i><button id="snd" class="on">🔊</button><button id="auto">Auto</button><button id="fs">⛶</button><span id="nc"></span></div></section>
+<aside><div id="sig" class="idle"><small>AI SIGNAL BRAIN</small><div id="sg">Scanning…</div><div id="cd"></div><div id="rsn"></div></div>
+<div id="stat"></div>
+<label>Expiry</label><div class="row"><button data-e="60" class="on">1m</button><button data-e="120">2m</button><button data-e="300">5m</button></div>
+<label>Amount ($)</label><div class="row"><button id="half">½</button><input id="amt" type="number" value="100" min="1"><button id="dbl">×2</button></div>
+<div class="pay" id="pay"></div>
+<button id="up" class="go g">▲ CALL</button><button id="dn" class="go r">▼ PUT</button>
+<label>Open trades</label><div id="ot"></div><label>History</label><div id="log"></div>
+<p class="warn">Demo account. Signals probabilistic hain, jeet ki guarantee nahi.</p></aside></main>
+<div id="md" hidden><div><h3>API Keys</h3><input id="k1" placeholder="Twelve Data key"><input id="k2" placeholder="Finnhub key"><div id="msg"></div><button id="sv" class="go g">Save & Test</button><button id="cl">Close</button></div></div>
+<script type="module" src="src/app.js"></script></body></html>
